@@ -1,0 +1,80 @@
+/* Variables */
+
+:root {
+    --color-header: linear-gradient(#92CAFD, #FFE455);
+    --color-footer: linear-gradient(#FFE455, #92CAFD);
+    --color-fondo: #f0f8ff;
+    --font-titulo: "Montagu Slab", serif;
+    --font-subtitulo: "Raleway", sans-serif;
+}
+
+/* Etiquetas */
+
+body {
+    margin: 0;
+    font-family: "lato", sans-serif;
+}
+
+header {
+    background: var(--color-header);
+    margin-bottom: 100px;
+}
+
+main {
+    padding: 10px;
+}
+
+footer {
+    background: var(--color-footer);
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+figure {
+    width: 250px;
+    float: right;
+    font-family: var(--font-subtitulo);
+    text-align: center;
+    margin-left: 8px;
+}
+
+/* Header */
+
+.logo-busqueda {
+    width: 80%;
+    font-family: var(--font-subtitulo);
+}
+
+.logo{
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+/* Main */
+
+/* bienvenido */
+
+.titulo {
+    text-align: center;
+    font-family: var(--font-titulo);
+}
+
+/* sedes */
+
+.sedes {
+    background: var(--color-fondo);
+    height: 300px;
+    padding: 60px 10px 0 10px;
+}
+
+.equipo-femenino {
+    float: left;
+}
+
+
+
+/* Footer */
+
+
