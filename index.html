@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Signika:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./balon-favicon" type="image/x-icon">
@@ -14,7 +17,7 @@
     <header>
         <!-- Navbar -->
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid logo-busqueda">
+        <div class="container-fluid logo-busqueda font-subtitulo">
           <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/voleibol-logo.png" alt="Logo club Gema"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,9 +50,9 @@
         <h1 class="titulo">¡Bienvenidos al club Gema!</h1>
         <p>¿Listo para elevar tu juego y ser parte de una comunidad apasionada por el voleibol? En el Club de Voleibol GEMA, no solo perfeccionamos nuestras habilidades, sino que también creamos amistades, superamos retos y disfrutamos cada punto con energía y compromiso. Únete a nosotros y forma parte de un equipo que no solo juega, sino que vive el voleibol con pasión. ¡Es tu momento de brillar en la cancha!</p>
       </section>
-      <section class="sedes">
+      <section class="sedes bg-azul">
         <div>
-          <figure>
+          <figure class="font-subtitulo">
             <img class="rounded-start equipo-femenino img-fluid" src="./assets/equipo-brasil-femenino.avif"  alt="Equipo de Brasil de voleibol femenino">
             <figcaption class="text-body-secondary">Individualmente somos una gota. Juntos somos un océano</figcaption>
           </figure>
@@ -59,6 +62,27 @@
         </div>
       </section>
       <section class="entrena-con-nosotros">
+        <div class="card">
+          <img src="./assets/brasil-femenino-celebracion.avif" class="card-img" alt="Celebracion de un punto de brasil">
+          <div class="texto-seccion bg-amarillo">
+            <h2 class="card-title titulo">¿Por qué entrenar con nosotros?</h2>
+            <h3 class="font-subtitulo sub-entrenar-nosotros">Mejorar habilidades deportivas:</h3>
+            <p class="card-text">Entrenamientos personalizados para perfeccionar técnica, fuerza y coordinación.</p>
+            <h3 class="font-subtitulo sub-entrenar-nosotros">Oportunidad de competir:</h3>
+            <p class="card-text">Participa en torneos locales y regionales para poner a prueba tus habilidades.</p>
+            <h3 class="font-subtitulo sub-entrenar-nosotros">Fomentar el trabajo en equipo:</h3>
+            <p class="card-text">Aprende a colaborar y desarrollar estrategias como parte de un grupo unido.</p>
+            <h3 class="font-subtitulo sub-entrenar-nosotros">Ambiente divertido y motivador:</h3>
+            <p class="card-text">Conocerás personas apasionadas por el voleibol mientras disfrutas del deporte.</p>
+            <h3 class="font-subtitulo sub-entrenar-nosotros">Crecer personalmente:</h3>
+            <p class="card-text">Fortalece valores como disciplina, compromiso y confianza en ti mismo.
+            </p>
+            <h3 class="font-subtitulo sub-entrenar-nosotros">Conexión con una comunidad deportiva:</h3>
+            <p class="card-text">Forma parte de un grupo apasionado donde podrás construir amistades duraderas mientras compartes tu amor por el voleibol.</p>
+          </div>
+        </div>
+      </section>
+      <section class="entrena-con-nosotros-g">
         <div class="card text-bg-dark">
           <img src="./assets/brasil-femenino-celebracion.avif" class="card-img" alt="Celebracion de un punto de brasil">
           <div class="card-img-overlay">
@@ -79,19 +103,22 @@
           </div>
         </div>
       </section>
+      <section class="testimonios">
+        <img class="float-start img-fluid equipo-hombres" src="./assets/equipo-masculino.webp" alt="Equipo de voleibol masculino">
+        <div class="texto-seccion bg-azul">
+          <h2 class="titulo">Testimonios</h2>
+          <p class="p-testimonios">"Unirme al Club de Voleibol GEMA ha sido una de las mejores decisiones que he tomado. He mejorado mi técnica, ganado confianza y, lo mejor de todo, he encontrado una familia en la cancha. Aquí, cada entrenamiento es una oportunidad para crecer." ~Sofia~</p>
+          <p class="p-testimonios">"Siempre me ha gustado el voleibol, pero en GEMA descubrí lo que significa realmente jugar en equipo. La energía, la pasión y el compañerismo hacen que cada partido sea inolvidable. ¡Aquí no solo jugamos, vivimos el voleibol!" ~Alejandro~</p>
+          <p class="p-testimonios">"Antes era tímida y dudaba de mis habilidades, pero en GEMA me enseñaron que la clave está en la dedicación. Hoy me siento más fuerte, segura y motivada para darlo todo en la cancha. Este club es un espacio para crecer y disfrutar." ~Valentina~</p>
+          <p class="p-testimonios">"Ser parte de GEMA ha sido una experiencia increíble. Cada entrenamiento es un reto, cada victoria es compartida y cada obstáculo lo enfrentamos juntos. Si te apasiona el voleibol, este es el lugar perfecto para ti." ~Daniel~</p>
+        </div>
       </section>
-      <section>
-        <img class="float-start" src="./assets/equipo-masculino.webp" alt="Equipo de voleibol masculino">
-        <h2>Testimonios</h2>
-        <p>"Unirme al Club de Voleibol GEMA ha sido una de las mejores decisiones que he tomado. He mejorado mi técnica, ganado confianza y, lo mejor de todo, he encontrado una familia en la cancha. Aquí, cada entrenamiento es una oportunidad para crecer." ~Sofia~</p>
-        <p>"Siempre me ha gustado el voleibol, pero en GEMA descubrí lo que significa realmente jugar en equipo. La energía, la pasión y el compañerismo hacen que cada partido sea inolvidable. ¡Aquí no solo jugamos, vivimos el voleibol!" ~Alejandro~</p>
-        <p>"Antes era tímida y dudaba de mis habilidades, pero en GEMA me enseñaron que la clave está en la dedicación. Hoy me siento más fuerte, segura y motivada para darlo todo en la cancha. Este club es un espacio para crecer y disfrutar." ~Valentina~</p>
-        <p>"Ser parte de GEMA ha sido una experiencia increíble. Cada entrenamiento es un reto, cada victoria es compartida y cada obstáculo lo enfrentamos juntos. Si te apasiona el voleibol, este es el lugar perfecto para ti." ~Daniel~</p>
-      </section>
-      <section>
+      <section class="horarios bg-amarillo">
+        <table class="tabla font-subtitulo caption-top">
           <thead>
+            <caption class="titulo">Horarios</caption>
             <tr>
-              <th><img src="./assets/icono-horarios.png" alt=""></th>
+              <th><img class="logo-horarios" src="./assets/icono-horarios.png" alt=""></th>
               <th>Infantil</th>
               <th>Femenino</th>
               <th>Masculino</th>
@@ -125,7 +152,7 @@
           </tbody>
         </table>
       </section>
-      <section>
+      <section class="registro bg-azul">
         <p>No esperes más para ser parte de algo grande. ¡Inscríbete hoy y lleva tu pasión por el voleibol al siguiente nivel!</p>
         <button type="button" class="btn btn-primary btn-lg">Registra tus datos</button>
       </section>
