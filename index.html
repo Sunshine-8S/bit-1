@@ -22,22 +22,22 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Beneficios</a>
+                <a class="nav-link" href="#beneficios">Beneficios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonios</a>
+                <a class="nav-link" href="#testimonios">Testimonios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="true">Horarios</a>
+                <a class="nav-link" href="#horarios">Horarios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="true">Uniformes</a>
+                <a class="nav-link" href="#">Uniformes</a>
               </li>
             </ul>
           </div>
@@ -46,11 +46,11 @@
     </header>
 
     <main>
-      <section class="bienvenido">
+      <section id="bienvenido">
         <h1 class="titulo">¡Bienvenidos al club Gema!</h1>
         <p>¿Listo para elevar tu juego y ser parte de una comunidad apasionada por el voleibol? En el Club de Voleibol GEMA, no solo perfeccionamos nuestras habilidades, sino que también creamos amistades, superamos retos y disfrutamos cada punto con energía y compromiso. Únete a nosotros y forma parte de un equipo que no solo juega, sino que vive el voleibol con pasión. ¡Es tu momento de brillar en la cancha!</p>
       </section>
-      <section class="sedes bg-azul">
+      <section id="sedes" class="bg-azul">
         <div>
           <figure class="font-subtitulo">
             <img class="rounded-start equipo-femenino img-fluid" src="./assets/equipo-brasil-femenino.avif"  alt="Equipo de Brasil de voleibol femenino">
@@ -61,7 +61,7 @@
           <p class="card-text">288 Marta Freeway, Deshawnview 20329 - 4159</p>
         </div>
       </section>
-      <section class="entrena-con-nosotros">
+      <section id="beneficios">
         <div class="card">
           <img src="./assets/brasil-femenino-celebracion.avif" class="card-img" alt="Celebracion de un punto de brasil">
           <div class="texto-seccion bg-amarillo">
@@ -82,7 +82,7 @@
           </div>
         </div>
       </section>
-      <section class="entrena-con-nosotros-g">
+      <section id="beneficios-g">
         <div class="card text-bg-dark">
           <img src="./assets/brasil-femenino-celebracion.avif" class="card-img" alt="Celebracion de un punto de brasil">
           <div class="card-img-overlay">
@@ -103,7 +103,7 @@
           </div>
         </div>
       </section>
-      <section class="testimonios">
+      <section id="testimonios">
         <img class="float-start img-fluid equipo-hombres" src="./assets/equipo-masculino.webp" alt="Equipo de voleibol masculino">
         <div class="texto-seccion bg-azul">
           <h2 class="titulo">Testimonios</h2>
@@ -113,7 +113,7 @@
           <p class="p-testimonios">"Ser parte de GEMA ha sido una experiencia increíble. Cada entrenamiento es un reto, cada victoria es compartida y cada obstáculo lo enfrentamos juntos. Si te apasiona el voleibol, este es el lugar perfecto para ti." ~Daniel~</p>
         </div>
       </section>
-      <section class="horarios bg-amarillo">
+      <section id="horarios" class="bg-amarillo">
         <table class="tabla font-subtitulo caption-top">
           <thead>
             <caption class="titulo">Horarios</caption>
@@ -152,20 +152,22 @@
           </tbody>
         </table>
       </section>
-      <section class="registro bg-azul">
-        <p>No esperes más para ser parte de algo grande. ¡Inscríbete hoy y lleva tu pasión por el voleibol al siguiente nivel!</p>
+      <section id="registro" class="bg-azul">
+        <div class="texto-alentador">
+          <p>No esperes más para ser parte de algo grande. ¡Inscríbete hoy y lleva tu pasión por el voleibol al siguiente nivel!</p>
+        </div>
         <button type="button" class="btn btn-primary btn-lg">Registra tus datos</button>
       </section>
     </main>
 
     <footer>
         <ul>
-          <li>(495)-9630-95050</li>
-          <li>Club-Gema88@hotmail.com</li>
-          <li>Club-Gema.88</li>
-          <li><a href="https://github.com/Sunshine-8S"">GitHub</a></li>
+          <li class="whatsapp">(495)-9630-95050</li>
+          <li class="gmail">Club-Gema88@hotmail.com</li>
+          <li class="instagram">Club-Gema.88</li>
+          <li class="github"><a class="github-texto" href="https://github.com/Sunshine-8S"">GitHub</a></li>
         </ul>
-        <a class="navbar-brand" href="./index.html"><img src="./assets/voleibol-logo.png" alt="Logo club Gema"></a>
+        <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/voleibol-logo.png" alt="Logo club Gema"></a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>

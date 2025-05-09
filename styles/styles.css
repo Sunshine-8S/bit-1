@@ -50,6 +50,33 @@ caption {
     font-size: 25px;
 }
 
+footer {
+    padding: 8px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+li {
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-family: var(--font-subtitulo);
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
 /* Grupos */
 
 .font-subtitulo {
@@ -80,8 +107,13 @@ th, td {
 }
 
 .logo{
-    width: 100px;
-    margin-bottom: 25px;
+    width: 80px;
+}
+
+footer, #registro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Main */
@@ -94,7 +126,7 @@ th, td {
 
 /* sedes */
 
-.sedes {
+#sedes {
     background: var(--color-fondo-azul);
     height: 300px;
     padding: 60px 10px 0 10px;
@@ -104,9 +136,9 @@ th, td {
     float: left;
 }
 
-/* Entrena con nosotros */
+/* Beneficios */
 
-.entrena-con-nosotros-g {
+#beneficios-g {
     display: none;
 }
 
@@ -122,7 +154,7 @@ th, td {
 
 /* Testimonios */
 
-.testimonios {
+#testimonios {
     border: solid 1px #0000002b;
     border-radius: 5px;
     background-color: var(--color-fondo-azul);
@@ -150,11 +182,38 @@ th, td {
 
 /* Registro */
 
-.registro {
-    padding: 20px;
-    display: flex;
+#registro {
+    padding: 10px;
+}
+
+.texto-alentador {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.btn {
+    height: 50px;
+    font-size: 16px;
 }
 
 /* Footer */
 
+.whatsapp::before {
+    background-image: url(../assets/whatsapp-icono.svg);
+}
 
+.gmail::before {
+    background-image: url(../assets/mailbox-icono.svg);
+}
+
+.instagram::before {
+    background-image: url(../assets/instagram-icono.svg);
+}
+
+.github::before {
+    background-image: url(../assets/github-icono.svg);
+}
+.github-texto {
+    text-decoration: none;
+    color: black;
+}
