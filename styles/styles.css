@@ -7,6 +7,8 @@
     --color-fondo-amarillo: #fffff0;
     --font-titulo: "Montagu Slab", serif;
     --font-subtitulo: "Signika", sans-serif;
+    --color-titulo-azul: #005BAC;
+    --color-titulo-amarillo: #FFD700;
 }
 
 /* Etiquetas */
@@ -18,8 +20,7 @@ body {
 }
 
 header {
-    background: var(--color-header);
-    margin-bottom: 100px;
+    margin-bottom: 160px;
 }
 
 main {
@@ -35,9 +36,13 @@ section{
 }
 
 figure {
-    width: 250px;
+    width: 200px;
     float: right;
-    margin-left: 8px;
+    margin-left: 30px;
+}
+
+figcaption {
+    font-size: 14px;
 }
 
 tr {
@@ -100,6 +105,39 @@ th, td {
     text-align: center;
 }
 
+footer, #registro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-amarillo, .titulo-azul {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.titulo-azul {
+    color: var(--color-titulo-azul);
+}
+
+.titulo-amarillo {
+    color: var(--color-titulo-amarillo);
+}
+
+.sub-amarillo {
+    font-weight: 300;
+}
+
+.sombra {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    transition: transform 0.4s ease-in-out;
+}
+
+.sombra:hover {
+    transform: scale(1.03); /* Aumenta el tamaño al pasar el mouse */
+}
+
 /* Header */
 
 .logo-busqueda {
@@ -108,12 +146,21 @@ th, td {
 
 .logo{
     width: 80px;
+    transition: transform 0.3s ease-in-out;
 }
 
-footer, #registro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo:hover {
+    transform: scale(1.1); /* Lo agranda un poco */
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.navbar {
+    background: var(--color-header);
+    position: fixed;
+    width: 100%;
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
 /* Main */
@@ -128,12 +175,20 @@ footer, #registro {
 
 #sedes {
     background: var(--color-fondo-azul);
-    height: 300px;
-    padding: 60px 10px 0 10px;
+    padding: 20px
+}
+
+.div-sedes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-img-caption {
+    order: 2;
 }
 
 .equipo-femenino {
-    float: left;
+    margin-bottom: 10px;
 }
 
 /* Beneficios */
@@ -143,8 +198,11 @@ footer, #registro {
 }
 
 .texto-seccion {
-    padding: 15px;
+    width: 80%;
     font-size: 15px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .sub-entrenar-nosotros {
@@ -180,6 +238,10 @@ footer, #registro {
     width: 50px;
 }
 
+.cap-horarios {
+    margin-bottom: 0;
+}
+
 /* Registro */
 
 #registro {
@@ -192,8 +254,15 @@ footer, #registro {
 }
 
 .btn {
-    height: 50px;
-    font-size: 16px;
+    height: 45px;
+    font-size: 14px;
+    margin-right: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    color: black;
+    transform: scale(1.1);
 }
 
 /* Footer */
@@ -213,6 +282,15 @@ footer, #registro {
 .github::before {
     background-image: url(../assets/github-icono.svg);
 }
+
+.github {
+    transition: transform 0.2s ease-in-out;
+}
+
+.github:hover {
+    transform: scale(1.1);
+}
+
 .github-texto {
     text-decoration: none;
     color: black;

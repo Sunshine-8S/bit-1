@@ -16,7 +16,7 @@
 
     <header>
         <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg fijo">
         <div class="container-fluid logo-busqueda font-subtitulo">
           <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/voleibol-logo.png" alt="Logo club Gema"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+                <a class="nav-link active" aria-current="page" href="./contactanos.html">Contáctanos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#beneficios">Beneficios</a>
@@ -51,40 +51,42 @@
         <p>¿Listo para elevar tu juego y ser parte de una comunidad apasionada por el voleibol? En el Club de Voleibol GEMA, no solo perfeccionamos nuestras habilidades, sino que también creamos amistades, superamos retos y disfrutamos cada punto con energía y compromiso. Únete a nosotros y forma parte de un equipo que no solo juega, sino que vive el voleibol con pasión. ¡Es tu momento de brillar en la cancha!</p>
       </section>
       <section id="sedes" class="bg-azul">
-        <div>
-          <figure class="font-subtitulo">
-            <img class="rounded-start equipo-femenino img-fluid" src="./assets/equipo-brasil-femenino.avif"  alt="Equipo de Brasil de voleibol femenino">
+        <div class="div-sedes">
+          <figure class="font-subtitulo contenedor-img-caption">
+            <img class="rounded-start equipo-femenino img-fluid sombra" src="./assets/equipo-brasil-femenino.avif"  alt="Equipo de Brasil de voleibol femenino">
             <figcaption class="text-body-secondary">Individualmente somos una gota. Juntos somos un océano</figcaption>
           </figure>
-          <h2 class="card-title titulo">Sedes</h2>
-          <p class="card-text">9405 Filiberto Ways, Kenner 45021 - 0346</p>
-          <p class="card-text">288 Marta Freeway, Deshawnview 20329 - 4159</p>
+          <div class="texto-sedes">
+            <h2 class="card-title titulo titulo-azul">Sedes</h2>
+            <p class="card-text">9405 Filiberto Ways, Kenner 45021 - 0346</p>
+            <p class="card-text">288 Marta Freeway, Deshawnview 20329 - 4159</p>
+          </div>
         </div>
       </section>
       <section id="beneficios">
-        <div class="card">
-          <img src="./assets/brasil-femenino-celebracion.avif" class="card-img" alt="Celebracion de un punto de brasil">
+        <div class="card bg-amarillo">
+          <img src="./assets/brasil-femenino-celebracion.avif" class="card-img sombra" alt="Celebracion de un punto de brasil">
           <div class="texto-seccion bg-amarillo">
-            <h2 class="card-title titulo">¿Por qué entrenar con nosotros?</h2>
-            <h3 class="font-subtitulo sub-entrenar-nosotros">Mejorar habilidades deportivas:</h3>
+            <h2 class="card-title titulo titulo-amarillo">¿Por qué entrenar con nosotros?</h2>
+            <h3 class="font-subtitulo sub-entrenar-nosotros sub-amarillo">Mejorar habilidades deportivas:</h3>
             <p class="card-text">Entrenamientos personalizados para perfeccionar técnica, fuerza y coordinación.</p>
-            <h3 class="font-subtitulo sub-entrenar-nosotros">Oportunidad de competir:</h3>
+            <h3 class="font-subtitulo sub-entrenar-nosotros sub-amarillo">Oportunidad de competir:</h3>
             <p class="card-text">Participa en torneos locales y regionales para poner a prueba tus habilidades.</p>
-            <h3 class="font-subtitulo sub-entrenar-nosotros">Fomentar el trabajo en equipo:</h3>
+            <h3 class="font-subtitulo sub-entrenar-nosotros sub-amarillo">Fomentar el trabajo en equipo:</h3>
             <p class="card-text">Aprende a colaborar y desarrollar estrategias como parte de un grupo unido.</p>
-            <h3 class="font-subtitulo sub-entrenar-nosotros">Ambiente divertido y motivador:</h3>
+            <h3 class="font-subtitulo sub-entrenar-nosotros sub-amarillo">Ambiente divertido y motivador:</h3>
             <p class="card-text">Conocerás personas apasionadas por el voleibol mientras disfrutas del deporte.</p>
-            <h3 class="font-subtitulo sub-entrenar-nosotros">Crecer personalmente:</h3>
+            <h3 class="font-subtitulo sub-entrenar-nosotros sub-amarillo">Crecer personalmente:</h3>
             <p class="card-text">Fortalece valores como disciplina, compromiso y confianza en ti mismo.
             </p>
-            <h3 class="font-subtitulo sub-entrenar-nosotros">Conexión con una comunidad deportiva:</h3>
+            <h3 class="font-subtitulo sub-entrenar-nosotros sub-amarillo">Conexión con una comunidad deportiva:</h3>
             <p class="card-text">Forma parte de un grupo apasionado donde podrás construir amistades duraderas mientras compartes tu amor por el voleibol.</p>
           </div>
         </div>
       </section>
       <section id="beneficios-g">
         <div class="card text-bg-dark">
-          <img src="./assets/brasil-femenino-celebracion.avif" class="card-img" alt="Celebracion de un punto de brasil">
+          <img src="./assets/brasil-femenino-celebracion.avif" class="card-img sombra" alt="Celebracion de un punto de brasil">
           <div class="card-img-overlay">
             <h2 class="card-title titulo">¿Por qué entrenar con nosotros?</h2>
             <h3>Mejorar habilidades deportivas:</h3>
@@ -104,9 +106,9 @@
         </div>
       </section>
       <section id="testimonios">
-        <img class="float-start img-fluid equipo-hombres" src="./assets/equipo-masculino.webp" alt="Equipo de voleibol masculino">
+        <img class="float-start img-fluid equipo-hombres sombra" src="./assets/equipo-masculino.webp" alt="Equipo de voleibol masculino">
         <div class="texto-seccion bg-azul">
-          <h2 class="titulo">Testimonios</h2>
+          <h2 class="titulo titulo-azul">Testimonios</h2>
           <p class="p-testimonios">"Unirme al Club de Voleibol GEMA ha sido una de las mejores decisiones que he tomado. He mejorado mi técnica, ganado confianza y, lo mejor de todo, he encontrado una familia en la cancha. Aquí, cada entrenamiento es una oportunidad para crecer." ~Sofia~</p>
           <p class="p-testimonios">"Siempre me ha gustado el voleibol, pero en GEMA descubrí lo que significa realmente jugar en equipo. La energía, la pasión y el compañerismo hacen que cada partido sea inolvidable. ¡Aquí no solo jugamos, vivimos el voleibol!" ~Alejandro~</p>
           <p class="p-testimonios">"Antes era tímida y dudaba de mis habilidades, pero en GEMA me enseñaron que la clave está en la dedicación. Hoy me siento más fuerte, segura y motivada para darlo todo en la cancha. Este club es un espacio para crecer y disfrutar." ~Valentina~</p>
@@ -116,7 +118,7 @@
       <section id="horarios" class="bg-amarillo">
         <table class="tabla font-subtitulo caption-top">
           <thead>
-            <caption class="titulo">Horarios</caption>
+            <caption class="titulo titulo-amarillo cap-horarios">Horarios</caption>
             <tr>
               <th><img class="logo-horarios" src="./assets/icono-horarios.png" alt=""></th>
               <th>Infantil</th>
@@ -156,7 +158,7 @@
         <div class="texto-alentador">
           <p>No esperes más para ser parte de algo grande. ¡Inscríbete hoy y lleva tu pasión por el voleibol al siguiente nivel!</p>
         </div>
-        <button type="button" class="btn btn-primary btn-lg">Registra tus datos</button>
+        <a href="./contactanos.html"><button type="button" class="btn btn-primary btn-lg">Registra tus datos</button></a>
       </section>
     </main>
 
@@ -165,7 +167,7 @@
           <li class="whatsapp">(495)-9630-95050</li>
           <li class="gmail">Club-Gema88@hotmail.com</li>
           <li class="instagram">Club-Gema.88</li>
-          <li class="github"><a class="github-texto" href="https://github.com/Sunshine-8S"">GitHub</a></li>
+          <li class="github"><a class="github-texto" href="https://github.com/Sunshine-8S" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
         <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/voleibol-logo.png" alt="Logo club Gema"></a>
     </footer>
