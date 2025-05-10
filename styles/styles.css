@@ -254,7 +254,7 @@ footer, #registro {
 }
 
 .btn {
-    font-size: 14px;
+    font-size: 14 px;
     margin-right: 25px;
     transition: all 0.3s ease-in-out;
 }
@@ -293,4 +293,99 @@ footer, #registro {
 .github-texto {
     text-decoration: none;
     color: black;
+}
+
+/* Pagina de inscripcion */
+
+.inscripcion {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border: groove #0000002b;
+    padding: 8px;
+    background: var(--color-fondo-amarillo);
+}
+
+/* Etiquetas */
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Grupos */
+
+.form-acudiente, .form-voleibolista {
+    border-radius: 10px;
+}
+
+.acudiente, .voleibolista {
+    width: 80%;
+    margin: auto;
+}
+
+.btn-acudiente, .btn-voleibolista {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* Botones */
+
+.btn-amarillo {
+  background-color: #FFD700;
+  transform: transition 0.3s ease-in-out;
+}
+
+.btn-amarillo:hover {
+    transition: scale(1.3);
+    background-color: #FFD700;
+}
+
+.btn-azul {
+  background-color: #007BFF;
+  transform: transition 0.3s ease-in-out;
+}
+
+.btn-azul:hover {
+    transition: scale(1.3);
+    background-color: #007BFF;
+}
+
+/* Fondo formularios*/
+
+.container-formularios {
+    background-image: url(../assets/cancha-volley.jpg);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-size: cover;
+    background-blend-mode: multiply; /* Mezcla el fondo con el color */
+    background-position: center;
+}
+
+.form-acudiente {
+    padding-bottom: 50px;
+}
+
+.form-voleibolista {
+    padding-top: 50px;
+}
+
+/* Titulos */
+
+.titulo-amarillo-claro {
+    color: #fafade;
+} 
+
+.titulo-azul-claro {
+    color: #d9edff;
 }

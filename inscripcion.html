@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./balon-favicon" type="image/x-icon">
+    <title>Inscripción</title>
+</head>
+<body>
+    <noscript>JavaScript es obligatorio</noscript>
+
+    <header>
+      <nav class="navbar navbar-expand-lg fijo">
+        <div class="container-fluid logo-busqueda font-subtitulo">
+          <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/voleibol-logo.png" alt="Logo club Gema"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Uniformes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="inscripcion">
+            <h1 class="titulo">Formulario de inscripción</h1>
+            <p>Por favor, completa el siguiente formulario con la información del voleibolista y su acudiente.</p>
+            <p>Si eres mayor de edad solo llena la sección del voleibolista</p>
+        </section>
+        <div class="container-formularios">
+            <section class="form-voleibolista">
+                <h2 class="font-subtitulo titulo titulo-azul-claro">Informacion del Voleibolista</h2>
+                <form class="voleibolista">
+                    <label for="nombreVol">Nombre</label>
+                    <input type="text" id="nombreVol" placeholder="Nombre completo" required>
+                    <label for="correoVol">Correo</label>
+                    <input type="email" id="correoVol" placeholder="Correo electrónico" required>
+                    <label for="celularVol">Celular</label>
+                    <input type="number" id="celularVol" placeholder="Número de contacto" required>
+                    <label for="edadVol">Edad</label>
+                    <input type="number" id="edadVol" placeholder="Edad" required>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-azul btn-voleibolista" type="submit" value="send">Button</button>
+                    </div>
+                </form>
+            </section>
+            <section class="form-acudiente">
+            <h2 class="font-subtitulo titulo titulo-amarillo-claro">Informacion del Acudiente</h2>
+            <form class="acudiente">
+                <label for="nombreActe">Nombre</label>
+                <input type="text" id="nombreActe" placeholder="Nombre completo" required>
+                <label for="correoActe">Correo</label>
+                <input type="email" id="correoActe" placeholder="Correo electrónico" required>
+                <label for="celularActe">Celular</label>
+                <input type="number" id="celularActe" placeholder="Número de contacto" required>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-amarillo btn-acudiente" type="submit" value="send">Button</button>
+                </div>
+            </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <ul>
+          <li class="whatsapp">(495)-9630-95050</li>
+          <li class="gmail">Club-Gema88@hotmail.com</li>
+          <li class="instagram">Club-Gema.88</li>
+          <li class="github"><a class="github-texto" href="https://github.com/Sunshine-8S" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+        <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/voleibol-logo.png" alt="Logo club Gema"></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
