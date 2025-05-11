@@ -15,3 +15,5 @@ Se presenta un formulario en donde podras enviarnos tu informacion de contacto p
 
 >> Sol González  
 [Figma](https://www.figma.com/design/8CkwB2ZLdHahXFkG4jxRjA/Volley?node-id=0-1&p=f&t=rUYsYdS34EWk95Mx-0)
+
+<img src="./assets/wireframe.png" alt="Wireframe" width="150">
