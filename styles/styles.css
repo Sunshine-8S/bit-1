@@ -180,7 +180,7 @@ footer, #registro {
 
 .div-sedes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .contenedor-img-caption {
@@ -388,4 +388,62 @@ input {
 
 .titulo-azul-claro {
     color: #d9edff;
+}
+
+/* Media queries */
+
+ @media screen and (min-width: 768px) {
+    main {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #sedes {
+        padding: 20px 40px;
+    }
+
+    #beneficios-g {
+        display: block;
+    }
+
+    #beneficios {
+        display: none;
+    }
+
+    .sub-entrenar-nosotros {
+        text-align: start;
+    }
+
+    .contenedor-beneficios {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedor-ben {
+        margin: 0;
+        width: 100%;
+    }
+
+    .equipo-fem-beneficios {
+        filter: brightness(30%); /* Reduce la luz = más oscuro */
+    }
+
+    .beneficios1, .beneficios2 {
+        width: 50%;
+        padding: 0 15px 0 10px;
+    }
+
+    .sub-entrenar-nosotros {
+        color: #62b6ff;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .beneficios1, .beneficios2 {
+        padding: 30px 15px 0 10px;
+    }
 }
